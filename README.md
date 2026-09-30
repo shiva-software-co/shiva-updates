@@ -2,7 +2,7 @@
 
 ## Name
 
-**Shiva ADE** is an agent-driven development environment for testing and QA automation. It is a terminal chat agent that takes a technical specification in any form, clarifies it in a dialogue with the owner, brings the requirements and the test strategy to readiness — and, further down the pipeline, generates test cases and automation code, runs tests across different environments (web, mobile, API, databases, message queues), and builds reports with requirement coverage.
+**Shiva ADE** is an agent-driven development environment for testing and QA automation. It is a terminal chat agent that takes a technical specification in any form, clarifies it in a dialogue with the tester, brings the requirements and the test strategy to readiness — and, further down the pipeline, generates test cases and automation code, runs tests across different environments (web, mobile, API, databases, message queues), and builds reports with requirement coverage.
 
 Shiva ADE is written in Rust and runs in the terminal (TUI). The core principle: **requirements are tested before any code is written**.
 
@@ -14,7 +14,7 @@ Shiva ADE is written in Rust and runs in the terminal (TUI). The core principle:
 - **Flaky tests.** Unstable runs undermine trust in automation and eat up time investigating false failures.
 - **No traceability.** The chain "requirement → case → code → result" is recorded nowhere — it is impossible to prove that a requirement is actually covered.
 
-**How Shiva ADE solves it.** The agent runs an input audit of the spec before any code is written: it finds gaps, contradictions, and stale requirements, asks clarifying questions, and does not finish the work until every open point is closed by the owner's answer or a deliberate decision. The test strategy is then built along the chain, followed by the plan, cases, automation, and runs — all with a single traceability chain "requirement → case → code → result".
+**How Shiva ADE solves it.** The agent runs an input audit of the spec before any code is written: it finds gaps, contradictions, and stale requirements, asks clarifying questions, and does not finish the work until every open point is closed by the tester's answer or a deliberate decision. The test strategy is then built along the chain, followed by the plan, cases, automation, and runs — all with a single traceability chain "requirement → case → code → result".
 
 ## Key features
 
@@ -32,9 +32,11 @@ Shiva ADE is written in Rust and runs in the terminal (TUI). The core principle:
 
 Key capabilities in development — automation code generation (Screenplay architecture), test runs (Vitest + Allure), self-healing locators, visual regression, a11y checks, and Vision AI. The full set with timeframes is in the roadmap below.
 
-## Roadmap
+## Examples
 
-> Timeframes are estimates: one task ≈ two weeks (sequential development); the plan belongs to the project owner and is revisited as the product evolves.
+- [Test documentation preparation](specs/0001-google-ai-mode-chat-entry/spec.md) — the complete specification and test strategy for the "Google AI Mode chat entry" feature: requirements audit, rounds of clarifying questions, scenario and risk coverage.
+
+## Roadmap
 
 | Feature | Status / ETA |
 |---------|--------------|
@@ -48,32 +50,32 @@ Key capabilities in development — automation code generation (Screenplay archi
 | Permission matrix (allow / ask / deny, injection protection) | Done |
 | **Workflow: skill commands** | |
 | `/shv-<name>` command infrastructure (extension without core changes) | Done |
-| `askUser` tool (question rounds with the owner) | Done |
+| `askUser` tool (question rounds with the tester) | Done |
 | "Requirements testing" command | Done |
 | "Test strategy" command | Done |
 | "Test plan" command | Q4 2026 |
 | "Test cases" command | Q4 2026 |
-| "Test automation" command (code generation) | Q1 2027 |
+| "Test automation" command (code generation) | Q4 2026 |
 | **Test framework** | |
-| Screenplay architecture (Actor / Task / Question / Ability) | Q1 2027 |
-| Data Builders (fluent builders for test data) | Q1 2027 |
-| Component Objects and API clients | Q1 2027 |
-| Environment configuration (YAML profiles, secrets via vault) | Q2 2027 |
-| Multi-target drivers: web (Playwright), mobile (Appium), API, DB, message queues | Q2 2027 |
-| Test runner: Vitest + Allure | Q2 2027 |
-| Reports with requirement coverage | Q3 2027 |
-| "Test run" command (execution and reporting) | Q3 2027 |
-| Real-time streaming of run results into the TUI | Q3 2027 |
+| Screenplay architecture (Actor / Task / Question / Ability) | Q4 2026 |
+| Data Builders (fluent builders for test data) | Q4 2026 |
+| Component Objects and API clients | Q4 2026 |
+| Environment configuration (YAML profiles, secrets via vault) | Q1 2027 |
+| Multi-target drivers: web (Playwright), mobile (Appium), API, DB, message queues | Q1 2027 |
+| Test runner: Vitest + Allure | Q1 2027 |
+| Reports with requirement coverage | Q1 2027 |
+| "Test run" command (execution and reporting) | Q1 2027 |
+| Real-time streaming of run results into the TUI | Q1 2027 |
 | **Test reliability** | |
-| Self-healing: automatic recovery of broken locators | Q3 2027 |
-| Visual regression: UI screenshot comparison | Q3 2027 |
-| A11y checks (WCAG) | Q4 2027 |
-| Vision AI: finding elements from screenshots | Q4 2027 |
-| Flaky detection and quarantine of unstable tests | Q4 2027 |
+| Self-healing: automatic recovery of broken locators | Q2 2027 |
+| Visual regression: UI screenshot comparison | Q2 2027 |
+| A11y checks (WCAG) | Q2 2027 |
+| Vision AI: finding elements from screenshots | Q2 2027 |
+| Flaky detection and quarantine of unstable tests | Q2 2027 |
+| Case export to TMS (TestRail, Zefir, Xray, CSV) | Q2 2027 |
 | **Integrations and distribution** | |
-| Case export to TMS (TestRail, Zefir, Xray, CSV) | Q4 2027 |
-| MCP server integration (external agent tools) | Q4 2027 |
-| Cross-browser grid (BrowserStack, Sauce Labs) | Q1 2028 |
-| Cloud test runs (hosted CI integration) | Q1 2028 |
-| Video → test (converting a screen recording into a test) | Q1 2028 |
-| Distribution: binary, trial, license key, auto-updates | Q1 2028 |
+| MCP server integration (external agent tools) | Q3 2027 |
+| Cross-browser grid (BrowserStack, Sauce Labs) | Q3 2027 |
+| Cloud test runs (hosted CI integration) | Q3 2027 |
+| Video → test (converting a screen recording into a test) | Q3 2027 |
+| Distribution: binary, trial, license key, auto-updates | Q3 2027 |
