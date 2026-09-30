@@ -34,7 +34,7 @@ Key capabilities in development — automation code generation (Screenplay archi
 
 ## Roadmap
 
-> Timeframes are estimates: the plan belongs to the project owner and is revisited as the product evolves.
+> Timeframes are estimates: one task ≈ two weeks (sequential development); the plan belongs to the project owner and is revisited as the product evolves.
 
 | Feature | Status / ETA |
 |---------|--------------|
@@ -54,26 +54,26 @@ Key capabilities in development — automation code generation (Screenplay archi
 | "Test plan" command | Q4 2026 |
 | "Test cases" command | Q4 2026 |
 | "Test automation" command (code generation) | Q1 2027 |
-| "Test run" command (execution and reporting) | Q1 2027 |
 | **Test framework** | |
 | Screenplay architecture (Actor / Task / Question / Ability) | Q1 2027 |
 | Data Builders (fluent builders for test data) | Q1 2027 |
 | Component Objects and API clients | Q1 2027 |
-| Environment configuration (YAML profiles, secrets via vault) | Q1 2027 |
-| Multi-target drivers: web (Playwright), mobile (Appium), API, DB, message queues | Q1 2027 |
-| Test runner: Vitest + Allure | Q1 2027 |
-| Reports with requirement coverage | Q1 2027 |
-| Real-time streaming of run results into the TUI | Q2 2027 |
+| Environment configuration (YAML profiles, secrets via vault) | Q2 2027 |
+| Multi-target drivers: web (Playwright), mobile (Appium), API, DB, message queues | Q2 2027 |
+| Test runner: Vitest + Allure | Q2 2027 |
+| Reports with requirement coverage | Q3 2027 |
+| "Test run" command (execution and reporting) | Q3 2027 |
+| Real-time streaming of run results into the TUI | Q3 2027 |
 | **Test reliability** | |
-| Self-healing: automatic recovery of broken locators | Q2 2027 |
-| Visual regression: UI screenshot comparison | Q2 2027 |
-| A11y checks (WCAG) | Q2 2027 |
-| Vision AI: finding elements from screenshots | Q2 2027 |
-| Flaky detection and quarantine of unstable tests | Q2 2027 |
+| Self-healing: automatic recovery of broken locators | Q3 2027 |
+| Visual regression: UI screenshot comparison | Q3 2027 |
+| A11y checks (WCAG) | Q4 2027 |
+| Vision AI: finding elements from screenshots | Q4 2027 |
+| Flaky detection and quarantine of unstable tests | Q4 2027 |
 | **Integrations and distribution** | |
-| Case export to TMS (TestRail, Zefir, Xray, CSV) | Q2 2027 |
-| MCP server integration (external agent tools) | Q2 2027 |
-| Cross-browser grid (BrowserStack, Sauce Labs) | Q3 2027 |
-| Cloud test runs (hosted CI integration) | Q3 2027 |
-| Video → test (converting a screen recording into a test) | Q3 2027 |
-| Distribution: binary, trial, license key, auto-updates | Q3 2027 |
+| Case export to TMS (TestRail, Zefir, Xray, CSV) | Q4 2027 |
+| MCP server integration (external agent tools) | Q4 2027 |
+| Cross-browser grid (BrowserStack, Sauce Labs) | Q1 2028 |
+| Cloud test runs (hosted CI integration) | Q1 2028 |
+| Video → test (converting a screen recording into a test) | Q1 2028 |
+| Distribution: binary, trial, license key, auto-updates | Q1 2028 |
