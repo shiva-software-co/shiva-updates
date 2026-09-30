@@ -74,5 +74,6 @@ Key capabilities in development — automation code generation (Screenplay archi
 | Case export to TMS (TestRail, Zefir, Xray, CSV) | Q2 2027 |
 | MCP server integration (external agent tools) | Q2 2027 |
 | Cross-browser grid (BrowserStack, Sauce Labs) | Q3 2027 |
+| Cloud test runs (hosted CI integration) | Q3 2027 |
 | Video → test (converting a screen recording into a test) | Q3 2027 |
 | Distribution: binary, trial, license key, auto-updates | Q3 2027 |
